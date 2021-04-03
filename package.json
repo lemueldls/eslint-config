@@ -1,0 +1,45 @@
+{
+  "name": "@lemueldls/eslint-config",
+  "version": "1.0.0",
+  "description": "Personal ESLint config",
+  "main": "index.js",
+  "repository": "git+https://github.com/lemueldls/eslint-config.git",
+  "author": "Lemuel DLS",
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "bugs": {
+    "url": "https://github.com/lemueldls/eslint-config/issues"
+  },
+  "homepage": "https://github.com/lemueldls/eslint-config#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "esbuild ./src --format=cjs --minify --outfile=index.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "devDependencies": {
+    "@types/eslint": "^7.2.8",
+    "@yarnpkg/pnpify": "^2.4.0",
+    "esbuild": "^0.11.4",
+    "typescript": "^4.2.3"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser ": "*",
+    "eslint": ">=7.20.0",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-prettier": "*",
+    "eslint-plugin-unicorn": "*"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
