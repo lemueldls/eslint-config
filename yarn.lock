@@ -24,7 +24,7 @@ __metadata:
     typescript: ^4.2.3
   peerDependencies:
     "@typescript-eslint/eslint-plugin": "*"
-    "@typescript-eslint/parser ": "*"
+    "@typescript-eslint/parser": "*"
     eslint: ">=7.20.0"
     eslint-config-prettier: "*"
     eslint-plugin-prettier: "*"
