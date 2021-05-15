@@ -1,6 +1,6 @@
 {
   "name": "@lemueldls/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Personal ESLint config",
   "main": "index.js",
   "repository": "git+https://github.com/lemueldls/eslint-config.git",
@@ -26,10 +26,10 @@
     "eslint-config"
   ],
   "devDependencies": {
-    "@types/eslint": "^7.2.8",
-    "@yarnpkg/pnpify": "^2.4.0",
-    "esbuild": "^0.11.4",
-    "typescript": "^4.2.3"
+    "@types/eslint": "^7.2.10",
+    "@yarnpkg/pnpify": "^3.0.0-rc.3",
+    "esbuild": "^0.11.22",
+    "typescript": "^4.2.4"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "*",

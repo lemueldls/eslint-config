@@ -8,6 +8,9 @@ const config: Linter.BaseConfig = {
     "plugin:prettier/recommended",
   ],
   rules: {
+    "unicorn/prefer-node-protocol": "off",
+    "unicorn/prefer-module": "off",
+
     "prettier/prettier": "warn",
 
     curly: ["warn", "multi"],
