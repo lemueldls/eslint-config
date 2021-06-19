@@ -9,7 +9,15 @@ const config: Linter.BaseConfig = {
   ],
   rules: {
     "unicorn/prefer-node-protocol": "off",
-    "unicorn/prefer-module": "off",
+    "unicorn/filename-case": [
+      "error",
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+        },
+      },
+    ],
 
     "prettier/prettier": "warn",
 
