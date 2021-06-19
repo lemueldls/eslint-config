@@ -25,7 +25,7 @@ jobs:
           node-version: 14
       - run: yarn install
       - run: yarn build
-      - run: yarn npm publish --access public
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM_TOKEN}}
 
@@ -42,6 +42,6 @@ jobs:
       - run: yarn install
       - run: echo registry=https://npm.pkg.github.com/lemueldls >> .npmrc
       - run: yarn build
-      - run: yarn npm publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
