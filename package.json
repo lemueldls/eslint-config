@@ -36,6 +36,7 @@
     "@typescript-eslint/parser": "*",
     "eslint": ">=7.28.0",
     "eslint-config-prettier": "*",
+    "eslint-plugin-prettier": "*",
     "eslint-plugin-unicorn": "*"
   },
   "engines": {
