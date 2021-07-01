@@ -8,7 +8,13 @@ const config: Linter.BaseConfig = {
     "plugin:prettier/recommended",
   ],
   rules: {
-    "unicorn/prefer-node-protocol": "off",
+    "unicorn/custom-error-definition": "error",
+    "unicorn/import-index": "error",
+    "unicorn/no-unsafe-regex": "error",
+    "unicorn/prefer-at": "error",
+    "unicorn/prefer-object-has-own": "error",
+    "unicorn/prefer-string-replace-all": "error",
+    "unicorn/prefer-top-level-await": "error",
     "unicorn/filename-case": [
       "error",
       {
@@ -18,6 +24,11 @@ const config: Linter.BaseConfig = {
         },
       },
     ],
+    "unicorn/no-keyword-prefix": "warn",
+    "unicorn/no-unused-properties": "warn",
+    "unicorn/string-content": "warn",
+    "unicorn/prefer-node-protocol": "off",
+    "unicorn/prefer-module": "off",
 
     "prettier/prettier": "warn",
 
@@ -52,6 +63,7 @@ const config: Linter.BaseConfig = {
 
     "no-fallthrough": "off",
 
+    "prefer-template": "warn",
     "prefer-destructuring": [
       "warn",
       {
