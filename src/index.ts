@@ -7,7 +7,12 @@ const config: Linter.BaseConfig = {
     "plugin:unicorn/recommended",
     "plugin:prettier/recommended",
   ],
+  parserOptions: {
+    parser: "@typescript-eslint/parser",
+  },
   rules: {
+    "@typescript-eslint/no-non-null-assertion": "off",
+
     "unicorn/custom-error-definition": "error",
     "unicorn/import-index": "error",
     "unicorn/no-unsafe-regex": "error",
@@ -24,9 +29,13 @@ const config: Linter.BaseConfig = {
         },
       },
     ],
-    "unicorn/no-keyword-prefix": "warn",
+    "unicorn/no-keyword-prefix": [
+      "error",
+      { disallowedPrefixes: ["new", "for"] },
+    ],
     "unicorn/no-unused-properties": "warn",
     "unicorn/string-content": "warn",
+    "unicorn/require-post-message-target-origin": "off",
     "unicorn/prefer-node-protocol": "off",
     "unicorn/prefer-module": "off",
 
@@ -61,6 +70,7 @@ const config: Linter.BaseConfig = {
     "object-shorthand": "warn",
     "operator-assignment": "warn",
 
+    "no-undef": "off",
     "no-fallthrough": "off",
 
     "prefer-template": "warn",
