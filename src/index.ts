@@ -16,10 +16,9 @@ const config: Linter.BaseConfig = {
     "unicorn/custom-error-definition": "error",
     "unicorn/import-index": "error",
     "unicorn/no-unsafe-regex": "error",
-    "unicorn/prefer-at": "error",
+    // "unicorn/prefer-at": "error",
     "unicorn/prefer-object-has-own": "error",
     "unicorn/prefer-string-replace-all": "error",
-    "unicorn/prefer-top-level-await": "error",
     "unicorn/filename-case": [
       "error",
       {
@@ -29,15 +28,11 @@ const config: Linter.BaseConfig = {
         },
       },
     ],
-    "unicorn/no-keyword-prefix": [
-      "error",
-      { disallowedPrefixes: ["new", "for"] },
-    ],
+    "unicorn/no-keyword-prefix": ["error", { disallowedPrefixes: ["new"] }],
     "unicorn/no-unused-properties": "warn",
-    "unicorn/string-content": "warn",
-    "unicorn/require-post-message-target-origin": "off",
-    "unicorn/prefer-node-protocol": "off",
-    "unicorn/prefer-module": "off",
+    "unicorn/prefer-node-protocol": "error",
+    // "unicorn/prefer-module": "error",
+    "unicorn/prefer-top-level-await": "error",
 
     "prettier/prettier": "warn",
 
