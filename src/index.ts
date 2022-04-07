@@ -4,20 +4,67 @@ const config: Linter.BaseConfig = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:n/recommended",
+    "plugin:promise/recommended",
+    "standard",
     "plugin:unicorn/recommended",
     "plugin:prettier/recommended",
   ],
   parserOptions: {
     parser: "@typescript-eslint/parser",
+    project: "tsconfig.json",
   },
   rules: {
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/array-type": "warn",
+    "@typescript-eslint/consistent-indexed-object-style": [
+      "warn",
+      "index-signature",
+    ],
+    "@typescript-eslint/consistent-type-assertions": "warn",
+    "@typescript-eslint/consistent-type-definitions": "warn",
+    "@typescript-eslint/consistent-type-exports": "warn",
+    "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/explicit-member-accessibility": "warn",
+    "@typescript-eslint/method-signature-style": ["warn", "method"],
+    "@typescript-eslint/prefer-literal-enum-member": "warn",
+    "@typescript-eslint/prefer-regexp-exec": "warn",
+    "@typescript-eslint/no-confusing-non-null-assertion": "error",
+    "@typescript-eslint/no-duplicate-imports": "warn",
+    "@typescript-eslint/no-invalid-this": "warn",
+    "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "warn",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "warn",
+    "@typescript-eslint/no-redundant-type-constituents": "warn",
+    "@typescript-eslint/no-unnecessary-condition": "warn",
+    "@typescript-eslint/no-unnecessary-qualifier": "warn",
+    "@typescript-eslint/no-unnecessary-type-arguments": "warn",
+    "@typescript-eslint/no-unnecessary-type-assertion": "warn",
+    "@typescript-eslint/no-unnecessary-type-constraint": "warn",
+
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type",
+        ],
+        "newlines-between": "always-and-inside-groups",
+      },
+    ],
 
     "unicorn/custom-error-definition": "error",
     "unicorn/import-index": "error",
     "unicorn/no-unsafe-regex": "error",
-    // "unicorn/prefer-at": "error",
-    "unicorn/prefer-object-has-own": "error",
+    // NOTE: Enable on ES2022
+    "unicorn/prefer-at": "off",
     "unicorn/prefer-string-replace-all": "error",
     "unicorn/filename-case": [
       "error",
@@ -31,7 +78,7 @@ const config: Linter.BaseConfig = {
     "unicorn/no-keyword-prefix": ["error", { disallowedPrefixes: ["new"] }],
     "unicorn/no-unused-properties": "warn",
     "unicorn/prefer-node-protocol": "error",
-    // "unicorn/prefer-module": "error",
+    "unicorn/prefer-module": "error",
     "unicorn/prefer-top-level-await": "error",
 
     "prettier/prettier": "warn",
@@ -68,6 +115,8 @@ const config: Linter.BaseConfig = {
     "no-undef": "off",
     "no-fallthrough": "off",
 
+    // NOTE: Enable on ES2022
+    "prefer-object-has-own": "off",
     "prefer-template": "warn",
     "prefer-destructuring": [
       "warn",
@@ -79,4 +128,4 @@ const config: Linter.BaseConfig = {
   },
 };
 
-export = config;
+export default config;
