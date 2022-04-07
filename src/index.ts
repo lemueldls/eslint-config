@@ -6,7 +6,6 @@ const config: Linter.BaseConfig = {
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "plugin:n/recommended",
     "plugin:promise/recommended",
     "standard",
     "plugin:unicorn/recommended",
