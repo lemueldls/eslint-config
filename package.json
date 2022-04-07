@@ -1,6 +1,7 @@
 {
   "name": "@lemueldls/eslint-config",
   "version": "1.0.10",
+  "type": "module",
   "description": "Personal ESLint config",
   "main": "index.js",
   "repository": "git+https://github.com/lemueldls/eslint-config.git",
@@ -9,6 +10,7 @@
     "index.js"
   ],
   "license": "MIT",
+  "packageManager": "yarn@3.2.0",
   "sideEffects": false,
   "bugs": {
     "url": "https://github.com/lemueldls/eslint-config/issues"
@@ -26,21 +28,24 @@
     "eslint-config"
   ],
   "devDependencies": {
-    "@types/eslint": "^7.28.0",
-    "@yarnpkg/sdks": "^2.4.1-rc.4",
-    "esbuild": "^0.12.20",
-    "typescript": "^4.3.5"
+    "@types/eslint": "^8.4.1",
+    "esbuild": "^0.14.34",
+    "typescript": "^4.6.3"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
-    "eslint": ">=7.28.0",
+    "eslint": ">=8.0.0",
     "eslint-config-prettier": "*",
+    "eslint-config-standard": ">=17.0.0-0",
+    "eslint-import-resolver-typescript": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-n": "*",
     "eslint-plugin-prettier": "*",
+    "eslint-plugin-promise": "*",
     "eslint-plugin-unicorn": "*"
   },
   "engines": {
-    "node": ">=12.0.0"
-  },
-  "packageManager": "yarn@3.0.1"
+    "node": "^12.22.0 || ^14.19.0 || >=16.10.0"
+  }
 }
