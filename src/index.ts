@@ -7,7 +7,6 @@ const config: Linter.BaseConfig = {
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:promise/recommended",
-    "standard",
     "plugin:unicorn/recommended",
     "plugin:prettier/recommended",
   ],

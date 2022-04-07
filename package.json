@@ -37,7 +37,6 @@
     "@typescript-eslint/parser": "*",
     "eslint": ">=8.0.0",
     "eslint-config-prettier": "*",
-    "eslint-config-standard": ">=17.0.0-0",
     "eslint-import-resolver-typescript": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-prettier": "*",

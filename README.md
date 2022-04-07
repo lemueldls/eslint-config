@@ -3,5 +3,5 @@
 > Personal ESLint Config
 
 ```console
-yarn add --dev @lemueldls/eslint-config eslint-{config-{prettier,standard@next},plugin-{prettier,promise,unicorn,import},import-resolver-typescript}
+yarn add --dev @lemueldls/eslint-config eslint-{config-prettier,plugin-{prettier,promise,unicorn,import},import-resolver-typescript}
 ```
