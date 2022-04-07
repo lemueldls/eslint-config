@@ -1,7 +1,6 @@
 {
   "name": "@lemueldls/eslint-config",
   "version": "1.2.1",
-  "type": "module",
   "description": "Personal ESLint config",
   "main": "index.js",
   "repository": "git+https://github.com/lemueldls/eslint-config.git",

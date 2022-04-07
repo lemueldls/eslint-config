@@ -126,4 +126,4 @@ const config: Linter.BaseConfig = {
   },
 };
 
-export default config;
+export = config;
